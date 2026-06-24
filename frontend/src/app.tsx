@@ -9,7 +9,7 @@ function App() {
   const [users, setUsers] = useState<User[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/users")
+    fetch("https://simple-app-h71k.onrender.com/users")
       .then((res) => res.json())
       .then((data) => setUsers(data));
   }, []);
